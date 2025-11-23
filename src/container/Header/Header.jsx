@@ -29,7 +29,7 @@ function Header() {
 
         {/* QUOTE */}
         <p className="header-quote">
-          "If you want to creak the system first you understand the system"
+          "If you want to crack the system first you understand the system"
         </p>
 
         {/* ICONS */}
