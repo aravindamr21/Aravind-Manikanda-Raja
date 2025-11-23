@@ -1,0 +1,61 @@
+.app__footer-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.app__footer-card {
+  min-width: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--gray-color);
+    font-weight: 500;
+  }
+
+  &:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* ⭐ Resume Icon Styling */
+.resume-card {
+  display: flex;
+  align-items: center;
+}
+
+.resume-icon {
+  font-size: 40px;            /* icon size same as image icons */
+  color: var(--secondary-color);
+  margin-right: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.resume-card:hover .resume-icon {
+  transform: scale(1.1);      /* little zoom on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .app__footer-card {
+    width: 90%;
+  }
+}
